@@ -13,3 +13,4 @@ Create HTML for run Buddy matching the mockup image received
 
 ! [Sections What we do and What you do]
 * Added new lines to What we do and what you do sections. Also, added new svg images to the what you do section
+* Added styling to what we do and what you do sections
