@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,9 +9,9 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
-/*apply styles to header */
+/*apply styles to header start */
 header {
-padding: 30px 45px;
+padding: 20px 35px;
 background-color: #39a6b2;
 display: flex;
 justify-content: space-between;
@@ -25,7 +26,6 @@ header h1 {
 }
 
 header a {
-    float: right;
     text-decoration: none;
     color: #fce138;
 }
@@ -53,7 +53,9 @@ header h1 {
     color: #fce138;
     margin: 0;
 }
+/*apply styles to header end*/
 
+/*apply styles to footer start*/
 footer {
     background: #fce138;
     width: 100%;
@@ -76,6 +78,7 @@ footer div {
 footer a {
     color: #024e76;
 }
+/*apply styles to footer end*/
 
 section {
     padding: 60px;
@@ -151,6 +154,24 @@ section {
 
 /* HERO STYLES END */
 
+/* Reorganizing css with new rules to eliminate duplicate entries and condolidate all rules into a few new rules*/
+.section-title {
+    font-size: 55px;
+    border-bottom: 3px solid;
+    color: #024e76;
+    padding-bottom: 20px;
+    text-align: center;
+    margin:  0 auto 35px auto;
+    width: 50%;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
 
 /* What We Do section style start */
 .intro p {
@@ -170,23 +191,17 @@ section {
 
 /* What You Do section styling end*/
 
-/* Reorganizing css with new rules to eliminate duplicate entries and condolidate all rules into a few new rules*/
-.section-title {
-    font-size: 55px;
-    border-bottom: 3px solid;
-    color: #024e76;
-    padding-bottom: 20px;
-    text-align: center;
-    margin:  0 auto 35px auto;
-    width: 50%;
-}
+/* Adding Flexbox styles to each step */
 
-.primary-border {
-    border-color: #fce138;
-}
-
-.secondary-border {
-    border-color: #39a6b2;
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*General cleanup to size and color elements correctly Start*/
@@ -227,19 +242,6 @@ section {
     color: #024e76;
 }
 
-/* Adding Felxbox styles to each step */
-
-.step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 1px solid #39a6b2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 /* Trainers Section Styling Start */
 
 .trainers {
@@ -265,18 +267,6 @@ section {
     line-height: 1.3;
 }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.flex-row {
-    display: flex;
-}
-
 /* Adding more specific to the trainers' name heading, subheading. and paragraph text */
 .trainer-bio h3 {
     font-size: 38px;
@@ -292,7 +282,9 @@ section {
     font-size: 17px;
 }
 
-/* REACH OUT STYLES START*/
+/* Trainers Section Styling End */
+
+/* Reach out style start */
 
 .contact {
     background: #024e76;
@@ -302,19 +294,18 @@ section {
     color: #fce138;
 }
 
-.contact-info iframe {
-    height: 400px;
-}
-
 .contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .contact-info > * {
     flex: 1;
     margin: 15px;
+}
+
+.contact-info iframe {
+    height: 400px;
 }
 
 .contact-info div {
@@ -333,10 +324,6 @@ section {
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
-}
-
-.contact-info a {
-    color:#fce138;
 }
 
 .contact-form input, .contact-form textarea {
@@ -359,5 +346,23 @@ section {
     padding: 15px 0;
     font-size: 16px;
 }
+.contact-info a {
+    color:#fce138;
+}
 
-/* REACH OUT STYLES END */
+/* Reach out style end */
+
+/* Utilities */
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-row {
+    display: flex;
+}
+
