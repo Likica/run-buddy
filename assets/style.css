@@ -47,12 +47,6 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
-}
 /*apply styles to header end*/
 
 /*apply styles to footer start*/
@@ -114,7 +108,6 @@ section {
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    margin: 5px 0 15px 0;
     width: 40%;
     margin: 3.5%;
 }
@@ -319,8 +312,7 @@ section {
     
 }
 
-.contact-info p, 
-.contact-info address {
+.contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
@@ -419,7 +411,6 @@ footer h2, footer div {
     section {
         padding: 30px 15px;
     }
-}
 
 .step h3 {
     flex: 1 100%;
@@ -442,13 +433,13 @@ footer h2, footer div {
 .step-text {
     flex: 100%;
 }
+}
 
 /* Media Query for 575px screen */
 @media screen and (max-width: 575px) {
     .hero-form button {
         width: 100%;
     }
-}
 
 .section-title {
     width: 100%;
@@ -472,4 +463,5 @@ footer h2, footer div {
 
 .contact-form {
     order: 3;
+}
 }
